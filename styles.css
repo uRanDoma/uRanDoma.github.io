@@ -4,12 +4,8 @@
     box-sizing: border-box;
 }
 
-.right2 {
-    float: right;
-    font-size: 18px;
-    color: rgb(255, 0, 0);
 }
-.right1 {
+.aside {
     float: right;
     font-size: 18px;
     color: rgb(8, 0, 0);
