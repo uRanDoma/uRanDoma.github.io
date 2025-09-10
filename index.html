@@ -1,87 +1,262 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме - Погребний Руслан</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydra VR</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<main>
-    <div class="container">
-        <aside class="sidebar">
-            <img src="https://i.pinimg.com/736x/5f/88/08/5f880806d4a21c86299c432572c83516.jpg" alt="Фото">
-            <h2>Контактна інформація</h2>
-            <p><strong>Email:</strong> pohrebnyi.ruslan@gmail.com</p>
-            <p><strong>Телефон:</strong> +380 99 089 51 24</p>
-            <p><strong>Місто:</strong> Івано-Франківськ</p>
-            
-            <h2>Мови</h2>
-            <p>Українська, Англійська (Низький рівень), Дотерський (Середній рівень)</p>
-            
-            <h2>Інтереси</h2>
-            <p>Розробка білдів, тайм реквієма, не ходіння на пари, буст людей, грати за мінорів </p>
-        </aside>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-wrapper">
+      <!-- ЛОГО -->
+      <div class="logo-wrapper">
+        <img src="Foto/logo.png" alt="HYDRA logo" class="logo-img">
+        <span class="logo-text">HYDRA</span>
+      </div>
 
-        <main class="content">
-            <h1>Погребний Руслан</h1>
-            
-            <section>
-                <h2>Досвід роботи</h2>
-                <h3>Дота-player <span class="aside">4-ий квартал 2022р - теперішній час</span></h3>
+      <!-- NAVIGATION -->
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Technologies</a></li>
+          <li><a href="#">How To</a></li>
+        </ul>
+      </nav>
 
-                <ul>
-                    <li>Легенда💪💪💪/3500+ ММР </li>
-                    <li>Професійне відстояння 1/2 поз💪</li>
-                    <li>Вигравав проіграні каткі💪💪</li>
-                </ul>
+      <!-- ACTION BUTTONS -->
+      <div class="actions">
+        <a href="#" class="btn white">Contact Us</a>
+        <a href="#" class="btn purple">Join Hydra</a>
+      </div>
 
-                <h3>HOI4-player <span class="aside">2-ий квартал 2023р - теперішній час</span></h3>
-                <ul>
-                    <li>Відбудова економіки</li>
-                    <li>Тримання фронту </li>
-                    <li>Робіння з мінора - мажора</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Освіта і кваліфікації</h2>
-                <h3>Бакалавр</h3>
-                <p><strong>Фаховий коледж електронних приладів Івано-Франківського національного технічного університету нафти і газу, Івано-Франківськ</strong> 
-                    <span class="aside"> 2022р - теперішній час</p></span>
-                <ul>
-                    <li>Спеціальність: Програмна інженерія</li>
-                </ul>
-
-                </ul>
-                <h3>1-5 клас школи<span class="aside"> 2013 - 2018рр</span></h3>
-                    <li>Професійна, відмінна</li>
-                </ul>
-
-                <h3>5-9 клас школи<span class="aside"> 2018 - 2022рр</span></h3>
-                    <li>середня, незаінтересованна</li>
-                </ul>
-
-            </section>
-
-            <section>
-                <h2>Навички</h2>
-                <p>Професійна гра в дота 2💪💪, середньо-професійна гра в hoi4 ну і знання C#, C++, Java, SQL, Python, HTML мов(чучут(прям чучут))</p>
-            </section>
-                 
-            <nav>
-                <h2>Моє портфоліо</h2>
-                <ul>
-                    <li><a href='Laba1/Inf_about_aftor.html'>Про автора</a></li>
-                    <li><a href='Laba1/Music_festival.html'>Музичний фестиваль</a></li>
-                    <li><a href='Limon/index.html'>Лимон</a></li>
-                    <li><a href='Mriya/cossacs.html'>Мрія</a></li>
-                    <li><a href='ekzamen/index.html'>Екзамен</a></li>
-                     <li><a href='Hydra/index.html'>Практика</a></li>
-                </ul>
-            </nav>
-            
-        </main>
+      <!-- BURGER -->
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
     </div>
-</main>
-</html>
+  </header>
 
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1><span>Dive</span> Into The Depths <br> Of <span>Virtual Reality</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae.
+          </p>
+          <!-- Кнопка + стрілка -->
+          <div class="hero-action">
+            <a href="#" class="btn purple">Build Your World</a>
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="hero-img">
+          <img src="Foto/li.png" alt="VR headset">
+          <img src="Foto/ramka.png" alt="VR frame">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT BAND -->
+    <section class="contact-band">
+      <div class="container band-grid">
+        <div class="band-item">
+          <img src="Foto/maps.png" alt="location icon" class="icon">
+          <div>
+            <h3>Pay Us a Visit</h3>
+            <p>Union St, Seattle, WA 98101, United States</p>
+          </div>
+        </div>
+        <div class="band-item">
+          <img src="Foto/phone.png" alt="phone icon" class="icon">
+          <div>
+            <h3>Give Us a Call</h3>
+            <p>(110) 111-1010</p>
+          </div>
+        </div>
+        <div class="band-item">
+          <img src="Foto/mail.png" alt="mail icon" class="icon">
+          <div>
+            <h3>Send Us a Message</h3>
+            <p>Contact@HydraVTech.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section">
+      <div class="about-intro">
+        <h2><span>INTRODUCTION</span><br>TO HYDRA VR <span class="arrow">→</span></h2>
+        <p class="intro-text">
+          Vitae sapien pellentesque habitant morbi tristique senectus et netus et.
+          Feugiat nibh sed pulvinar proin gravida hendrerit lectus.
+        </p>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="Foto/nigavr.png" alt="Hydra VR" />
+        </div>
+        <div class="about-text">
+          <h3>ABOUT<br>HYDRA VR</h3>
+          <p>
+            Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna
+            neque viverra justo. Vivamus at augue eget arcu dictum.
+          </p>
+          <a href="#" class="btn">LET’S GET IN TOUCH</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="why-section">
+      <div class="why-intro">
+        <h2><span>WHY BUILD</span><br>WITH HYDRA? <span class="arrow">→</span></h2>
+        <p>Vitae sapien pellentesque habitant morbi tristique senectus et netus et.</p>
+      </div>
+      <div class="why-cards">
+        <div class="why-card">
+          <div class="card-image"><img src="Foto/1.png" alt="Simulation"></div>
+          <h3>SIMULATION</h3>
+          <p>Vitae sapien pellentesque habitant morbi nunc.</p>
+          <a href="#" class="btn">TRY IT NOW</a>
+        </div>
+        <div class="why-card">
+          <div class="card-image"><img src="Foto/2.png" alt="Education"></div>
+          <h3>EDUCATION</h3>
+          <p>Vitae sapien pellentesque habitant morbi nunc.</p>
+          <a href="#" class="btn">TRY IT NOW</a>
+        </div>
+        <div class="why-card">
+          <div class="card-image"><img src="Foto/3.png" alt="Self-Care"></div>
+          <h3>SELF-CARE</h3>
+          <p>Vitae sapien pellentesque habitant morbi nunc.</p>
+          <a href="#" class="btn">TRY IT NOW</a>
+        </div>
+        <div class="why-card">
+          <div class="card-image"><img src="Foto/4.png" alt="Outdoor"></div>
+          <h3>OUTDOOR</h3>
+          <p>Vitae sapien pellentesque habitant morbi nunc.</p>
+          <a href="#" class="btn">TRY IT NOW</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGIES -->
+    <section class="technologies">
+      <div class="tech-banner">
+        <img src="Foto/back.png" alt="ФОТО" class="tech-bg">
+        <div class="tech-content">
+          <h2>TECHNOLOGIES & HARDWARE</h2>
+          <p>USED BY HYDRA VR.</p>
+          <button class="scroll-down" aria-label="Scroll down">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" 
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="tech-logos">
+        <div class="logo-item"><img src="Foto/unreal.png"></div>
+        <div class="logo-item"><img src="Foto/unity.png"></div>
+        <div class="logo-item"><img src="Foto/oculus.png"></div>
+        <div class="logo-item"><img src="Foto/vive.png"></div>
+      </div>
+    </section>
+
+    <!-- BUILD -->
+    <section class="build-section">
+      <div class="build-intro">
+        <h2><span>HOW WE BUILD</span><br>WITH HYDRA VR? <span class="arrow">→</span></h2>
+        <p>Vitae sapien pellentesque habitant morbi tristique senectus et netus et.</p>
+      </div>
+      <div class="build-steps">
+        <div class="step"><div class="circle">01</div><p><span>→</span> 3D Conception & Design</p></div>
+        <div class="step"><div class="circle">02</div><p><span>→</span> Interaction Design</p></div>
+        <div class="step"><div class="circle">03</div><p><span>→</span> VR World User Testing</p></div>
+        <div class="step"><div class="circle">04</div><p><span>→</span> Hydra VR Deploy</p></div>
+      </div>
+    </section>
+
+    <!-- JOIN HYDRA -->
+    <section class="join-hydra">
+      <h2>JOIN HYDRA</h2>
+      <p>Let's Build Your VR Experience</p>
+      <form class="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="First Name">
+          <input type="text" placeholder="Last Name">
+        </div>
+        <div class="form-row">
+          <input type="email" placeholder="Email">
+          <input type="tel" placeholder="Phone Number">
+        </div>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Tell Us Something..."></textarea>
+        <button type="submit">SEND TO HYDRA</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="hydra-footer">
+    <div class="hydra-footer__inner">
+      <div class="hydra-footer__row">
+        <div class="hydra-footer__logo-wrap">
+          <img src="Foto/logo.png" alt="Hydra logo" class="hydra-footer__logo">
+        </div>
+        <div class="hydra-footer__divider"></div>
+        <div class="hydra-footer__columns">
+          <div class="hydra-footer__col">
+            <ul class="hydra-footer__list">
+              <li>ABOUT</li><li>SERVICES</li><li>TECHNOLOGIES</li><li>HOW TO</li><li>JOIN HYDRA</li>
+            </ul>
+          </div>
+          <div class="hydra-footer__divider"></div>
+          <div class="hydra-footer__col">
+            <ul class="hydra-footer__list">
+              <li>F.A.Q</li><li>SITEMAP</li><li>CONDITIONS</li><li>LICENSES</li>
+            </ul>
+          </div>
+          <div class="hydra-footer__divider"></div>
+          <div class="hydra-footer__col hydra-footer__col--social">
+            <p class="hydra-footer__social-title">SOCIALIZE WITH HYDRA</p>
+            <div class="hydra-footer__social-icons">
+              <div class="hydra-footer__social-icon social-1"></div>
+              <div class="hydra-footer__social-icon social-2"></div>
+              <div class="hydra-footer__social-icon social-3"></div>
+              <div class="hydra-footer__social-icon social-4"></div>
+              <div class="hydra-footer__social-icon social-5"></div>
+              <div class="hydra-footer__social-icon social-6"></div>
+            </div>
+            <button type="button" class="hydra-footer__world-btn">BUILD YOUR WORLD</button>
+          </div>
+        </div>
+      </div>
+      <div class="hydra-footer__copyright">
+        <p>2023 © HYDRA LANDING PAGE - ALL RIGHTS RESERVED</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
