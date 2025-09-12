@@ -25,15 +25,16 @@ img {max-width:100%; display:block;}
   display: flex;
   align-items: center;
   gap: 10px;
-  
 }
 .logo-img {
   height: 40px;
+   margin-top: 40px;
 }
 .logo-text {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 2px;
+  margin-top: 40px;
 }
 
 .hero-text h1 {
@@ -991,6 +992,7 @@ body.no-scroll {
   box-sizing: border-box;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  margin-top: -40px;
 }
 
 #nav.open {
@@ -1002,10 +1004,9 @@ body.no-scroll {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
-  gap: 18px;
+  flex-direction: row;
   align-items: center;
-  width: 100%;
+  width: 50%;
 }
 #nav ul li { width: 100%; text-align:center; }
 #nav ul li a {
@@ -1121,28 +1122,7 @@ body.no-scroll {
   }
 
 }
-#nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  list-style: none;            
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
 
-#nav ul li {
-  display: inline-block;
-}
-
-#nav ul li a {
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 10px 15px;
-  text-decoration: none;
-  display: block;
-}
 
 @media (max-width: 768px) {
   #nav ul {
